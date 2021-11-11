@@ -6,9 +6,8 @@ function adicionaLinha(idTabela) {
     var celula1 = linha.insertCell(0);
     var celula2 = linha.insertCell(1);
     var celula3 = linha.insertCell(2);
-    //celula1.innerHTML = 'produto '+ Math.floor((Math.random() * 100) + 1); 
     celula1.innerHTML = '<input type="checkbox">';
-    celula2.innerHTML = Math.floor((Math.random() * 100) + 1);
+    celula2.innerHTML ="<label>Tarefa"+Math.floor((Math.random() * 100) + 1)+"</label>";
     celula3.innerHTML = "<button onclick='removeLinha(this)'>X</button>";
 }
 

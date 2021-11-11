@@ -12,7 +12,7 @@ header{
     flex-direction: column;
     padding: 5px;
 }
-input{
+#tarefa{
     width: 250px; 
     height: 25px;
     
@@ -21,9 +21,13 @@ input{
 #adicionar{
     margin-left: 10px;
     width: 80px;
-    height: 30px;
+    height: 30px;  
+}
+
+button{
     cursor: pointer;
 }
+
 table{
     border-collapse: separate;
     border-spacing: 10px 0px;
