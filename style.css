@@ -1,0 +1,13 @@
+header{
+    text-align: center;
+}
+.add{
+    display: flex;
+}
+.container{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
