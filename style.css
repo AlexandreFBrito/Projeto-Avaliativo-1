@@ -3,6 +3,7 @@ header{
 }
 .add{
     display: flex;
+    margin-bottom: 5px;
 }
 .container{
     border: 1px solid black;
@@ -11,6 +12,24 @@ header{
     flex-direction: column;
     padding: 5px;
 }
-table td{
-    border: 1px solid gainsboro;
+input{
+    width: 250px; 
+    height: 25px;
+    
+}
+
+#adicionar{
+    margin-left: 10px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+}
+td{
+    font-size: 14px;
+    min-width: 80px;
+    height: 20px;
 }
