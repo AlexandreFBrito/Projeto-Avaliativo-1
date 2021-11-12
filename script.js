@@ -30,19 +30,29 @@ function adicionaLinha() {
     if (tarefaDigitada != '') {
         //recupero a tabela
         var tabela = document.getElementById('lista');
+        
         //recupero o número de linhas da tabela
         var numeroLinhas = tabela.rows.length;
         var linha = tabela.insertRow(numeroLinhas);
+        
         //crio as celulas
         var celula1 = linha.insertCell(0);
         var celula2 = linha.insertCell(1);
         var celula3 = linha.insertCell(2);
+        
         //insiro os dados na celula
         celula1.innerHTML = '<input type="checkbox">';
         celula2.innerHTML = "<label>" + tarefaDigitada + "</label>";
         celula3.innerHTML = "<button onclick='removeLinha(this)'>X</button>";
+        
+        //inserindo dados no array
+        lista.push(tarefaDigitada);
+        
+        //inserindo dados no localstorage
+        window.localStorage.setItem('lista', lista);
+       
         //limpo o input
-        input.value = '';
+        input.value = '';        
     } else {
         alert('Não foi digitada nenhuma tarefa');
     }
