@@ -6,13 +6,13 @@ header{
     margin-bottom: 5px;
 }
 .container{
-    border: 1px solid black;
+
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 5px;
 }
-#tarefa{
+#tarefaDigitada{
     width: 250px; 
     height: 25px;
     
@@ -37,3 +37,6 @@ td{
     min-width: 80px;
     height: 20px;
 }
+input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+    }
